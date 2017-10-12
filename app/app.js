@@ -38,13 +38,13 @@
 
     // routes
     $routeProvider
-      .when('/style-guide', {
-        templateUrl: 'views/style-guide.html',
+      .when('/', {
+        templateUrl: 'views/home.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .when('/', {
-        templateUrl: 'views/home.html',
+      .when('/style-guide', {
+        templateUrl: 'views/style-guide.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
