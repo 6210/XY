@@ -4,26 +4,31 @@ Typography
 
 ******************************************************************/
 
-// Web fonts definitions goes here as well
-
-
-
+// Web fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat: 300,400,600,700,800'); // Montserrat
+@import url('https://fonts.googleapis.com/css?family=Adamina'); // Adamina
 
 /* ===============================
      fonts
    =============================== */
 $font: Helvetica, Times New Roman, Times, serif;
 $font-italic:  Helvetica, Times New Roman, Times, serif;
-$font-bold: 'Montserrat', sans-serif;
+$font-heading: 'Montserrat', sans-serif;
 $font-semibold: 'Montserrat', sans-serif;
 $font-extrabold: 'Montserrat', sans-serif;
 $font-extralightitalic: Helvetica, Arial, sans-serif;
+$font-serif: 'Adamina', serif;
 
 /* ===============================
      sizes
    =============================== */
 
-$heading: 58px;
+$h1: 58px;
+$h2: 47px;
+$h3: 35px;
+$h4: 29px;
+$h5: 20px;
+$h6: 14px;
 $large: 31px;
 $medium: 20px;
 $small: 14px;
@@ -35,7 +40,7 @@ $thin: 300;
 $normal: 400;
 $semi-bold: 600;
 $bold: 700;
-$extra-bold: 900;
+$extra-bold: 800;
 
 
 
