@@ -111,6 +111,12 @@ h1, .h1 {
 	font-weight: $extra-bold;
 }
 
+.font-slogan {
+	font-family: $font-slogan;
+	font-size: $large;
+	text-transform: lowercase;
+}
+
 h2, .h2 {
 	font-size: $h2;
 	line-height: 1.4em;

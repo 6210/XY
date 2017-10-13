@@ -17,6 +17,7 @@ $font-heading: 'Montserrat', sans-serif;
 $font-semibold: 'Montserrat', sans-serif;
 $font-extrabold: 'Montserrat', sans-serif;
 $font-extralightitalic: Helvetica, Arial, sans-serif;
+$font-slogan: Helvetica, Arial, sans-serif;
 $font-serif: 'Adamina', serif;
 
 /* ===============================
@@ -51,7 +52,7 @@ more here: http://www.newnet-soft.com/blog/csstypography
 p {
   line-height: 40px;
   font-weight: normal;
-  font-size: 31px;
+  font-size: $large;
   -ms-word-wrap: break-word;
   word-break: break-word; //non-standart css for webkit
   word-wrap: break-word;
