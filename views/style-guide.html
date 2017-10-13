@@ -3,6 +3,14 @@
 
 <hr>
 
+<scroll-spy>
+  <li><a href="#one">Item One</a></li>
+  <li><a href="#two">Item Two</a></li>
+  <li><a href="#three">Item Three</a></li>
+  <li><a href="#four">Item Four</a></li>
+  <li><a href="#five">Item Five</a></li>
+</scroll-spy>
+
 <div class="container cf">
 
     <h1>H1 Heading One</h1>
@@ -13,7 +21,7 @@
     <h6>H6 Heading Six</h6>
 
     <div>
-      <h3>Paragraph</h3>
+      <h3 id="">Paragraph</h3>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan
         id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor
@@ -23,7 +31,7 @@
         massa, convallis a pellentesque nec, egestas non nisi. Curabitur non nulla sit amet nisl tempus
         convallis quis ac lectus. Cras ultricies ligula sed magna dictum porta.
       </p>
-    <div>
+    </div>
 
     <div>
         <h3>Unordered List</h3>
@@ -47,156 +55,155 @@
         </ol>
     </div>
 
+    <div>
+      <h3>Form Elements</h3>
+
+      <!-- Form -->
+      <form id="formId" name="formName">
+
+        <!-- File Upload -->
+        <div class="form-group">
+            <label for="searchInput">Search Field</label>
+            <input type="search"
+                   name="searchInput"
+                   id="searchInput"
+                   autofocus/>
+        </div>
+
+        <!-- File Upload -->
+        <div class="form-group">
+            <label for="fileInput">File Upload</label>
+            <input type="file"
+                   name="fileInput"
+                   id="fileInput"/>
+        </div>
+
+        <!-- Text Input -->
+        <div class="form-group">
+          <label for="textInput">Text Input</label>
+          <input type="text"
+                 name="textInput"
+                 id="textInput"
+                 placeholder="Type Text"
+                 required/>
+        </div>
+
+        <!-- E-Mail Input -->
+        <div class="form-group">
+            <label for="emailInput">E-Mail</label>
+            <input type="email"
+                   name="emailInput"
+                   id="emailInput"
+                   placeholder="name@place.ext"
+                   required/>
+        </div>
+
+        <!-- Password Input -->
+        <div class="form-group">
+            <label for="passwordInput">Password Input</label>
+            <input type="password"
+                   name="passwordInput"
+                   id="passwordInput"
+                   placeholder="Type Password"
+                   required/>
+        </div>
+
+        <!-- Number Input -->
+        <div class="form-group">
+            <label for="numberInput">Number Input</label>
+            <input type="number"
+                   name="numberInput"
+                   id="numberInput"
+                   placeholcer="Age"/>
+        </div>
+
+        <!-- Radio Input -->
+        <div class="form-group">
+            <label for="radioInput1">Radio One</label>
+            <input type="radio"
+                   name="radioInput"
+                   id="radioInput1"/>
+                   <br>
+            <label for="radioInput2">Radio Two</label>
+            <input type="radio"
+                   name="radioInput"
+                   id="radioInput2"/>
+                   <br>
+        </div>
+
+        <!-- Telephone Input -->
+        <div class="form-group">
+            <label for="telephoneInput">Telephone Input</label>
+            <input type="tel"
+                   name="telephoneInput"
+                   id="telephoneInput"
+                   placeholder="000-000-000"
+                   required/>
+        </div>
+
+        <!-- URL Input -->
+        <div class="form-group">
+            <label for="urlInput">URL Input</label>
+            <input type="url"
+                   name="urlInput"
+                   id="urlInput"
+                   placeholder="http://www.your-domain.ext"
+                   required/>
+        </div>
+
+        <!-- Checkbox -->
+        <div class="form-group">
+            <input type="checkbox"
+                   name="checkbox1"
+                   id="checkbox1"
+                   value="Checkbox One"
+                   checked/>
+            <label for="checkbox1">Checkbox One</label>
+            <br>
+            <input type="checkbox"
+                   name="checkbox2"
+                   id="checkbox2"
+                   value="Checkbox Two"/>
+            <label for="checkbox2">Checkbox Two</label>
+            <br>
+            <input type="checkbox"
+                   name="checkbox3"
+                   id="checkbox3"
+                   value="Checkbox Three"/>
+            <label for="checkbox3">Checkbox Three</label>
+            <br>
+        </div>
+
+        <!-- Textarea -->
+        <div class="form-group">
+          <textarea rows="4"cols="50"form="formId">Text Area</textarea>
+        </div>
+
+        <!-- Select Box -->
+        <div class="form-group">
+          <label for="selectInput">Selection</label>
+          <select name="selectInput"
+                  id="selectInput">
+            <option value="Option One">
+              Option One
+            </option>
+            <option value="Option Two">
+              Option Two
+            </option>
+            <option value="Option Three">
+              Option Three
+            </option>
+            <option value="Option Four">
+              Option Four
+            </option>
+          </select>
+        </div>
+
+        <!-- Buttons -->
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+      </form>
+    </div>
+
 </div>
-
-<div>
-
-  <h3>Form Elements</h3>
-
-  <!-- Form -->
-  <form id="formId" name="formName">
-
-    <!-- File Upload -->
-    <div class="form-group">
-        <label for="searchInput">Search Field</label>
-        <input type="search"
-               name="searchInput"
-               id="searchInput"
-               autofocus/>
-    <div>
-
-    <!-- File Upload -->
-    <div class="form-group">
-        <label for="fileInput">File Upload</label>
-        <input type="file"
-               name="fileInput"
-               id="fileInput"/>
-    <div>
-
-    <!-- Text Input -->
-    <div class="form-group">
-      <label for="textInput">Text Input</label>
-      <input type="text"
-             name="textInput"
-             id="textInput"
-             placeholder="Type Text"
-             required/>
-    <div>
-
-    <!-- E-Mail Input -->
-    <div class="form-group">
-        <label for="emailInput">E-Mail</label>
-        <input type="email"
-               name="emailInput"
-               id="emailInput"
-               placeholder="name@place.ext"
-               required/>
-    <div>
-
-    <!-- Password Input -->
-    <div class="form-group">
-        <label for="passwordInput">Password Input</label>
-        <input type="password"
-               name="passwordInput"
-               id="passwordInput"
-               placeholder="Type Password"
-               required/>
-    <div>
-
-    <!-- Number Input -->
-    <div class="form-group">
-        <label for="numberInput">Number Input</label>
-        <input type="number"
-               name="numberInput"
-               id="numberInput"
-               placeholcer="Age"/>
-    <div>
-
-    <!-- Radio Input -->
-    <div class="form-group">
-        <label for="radioInput1">Radio One</label>
-        <input type="radio"
-               name="radioInput"
-               id="radioInput1"/>
-               <br>
-        <label for="radioInput2">Radio Two</label>
-        <input type="radio"
-               name="radioInput"
-               id="radioInput2"/>
-               <br>
-    <div>
-
-    <!-- Telephone Input -->
-    <div class="form-group">
-        <label for="telephoneInput">Telephone Input</label>
-        <input type="tel"
-               name="telephoneInput"
-               id="telephoneInput"
-               placeholder="000-000-000"
-               required/>
-    <div>
-
-    <!-- URL Input -->
-    <div class="form-group">
-        <label for="urlInput">URL Input</label>
-        <input type="url"
-               name="urlInput"
-               id="urlInput"
-               placeholder="http://www.your-domain.ext"
-               required/>
-    <div>
-
-    <!-- Checkbox -->
-    <div class="form-group">
-        <input type="checkbox"
-               name="checkbox1"
-               id="checkbox1"
-               value="Checkbox One"
-               checked/>
-        <label for="checkbox1">Checkbox One</label>
-        <br>
-        <input type="checkbox"
-               name="checkbox2"
-               id="checkbox2"
-               value="Checkbox Two"/>
-        <label for="checkbox2">Checkbox Two</label>
-        <br>
-        <input type="checkbox"
-               name="checkbox3"
-               id="checkbox3"
-               value="Checkbox Three"/>
-        <label for="checkbox3">Checkbox Three</label>
-        <br>
-    <div>
-
-    <textarea rows="4"
-              cols="50"
-              form="formId">
-        Text Area.
-    </textarea>
-
-    <div>
-      <label for="selectInput">Selection</label>
-      <select name="selectInput"
-              id="selectInput">
-        <option value="Option One">
-          Option One
-        </option>
-        <option value="Option Two">
-          Option Two
-        </option>
-        <option value="Option Three">
-          Option Three
-        </option>
-        <option value="Option Four">
-          Option Four
-        </option>
-      </select>
-    <div>
-
-    <!-- Buttons -->
-    <button type="submit">Submit</button>
-    <button type="reset">Reset</button>
-
-  </form>
-<div>
