@@ -3,3 +3,17 @@
 Grid
 
 ******************************************************************/
+
+scroll-spy {
+  list-style: none;
+  font-weight: bold;
+  padding: 10px 15px 10px 10px;
+  font-size: 11px;
+  position: fixed;
+  line-height: 21px;
+  right: 0;
+  z-index: 1;
+  text-align: right;
+  top: 36%;
+  background-color: rgba(255, 255, 255, 0.4);
+  text-transform: UPPERCASE;}
