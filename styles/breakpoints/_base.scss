@@ -94,7 +94,6 @@ h4, .h4, h5, .h5, h6, .h6 {
 	font-weight: $bold;
 	color: $black;
 	font-family: $font-serif;
-	text-transform: $sentancecase;
 	letter-spacing: 2px;
 	word-spacing: 1.5px;
 	-webkit-margin-after: 0;
@@ -107,7 +106,7 @@ h4, .h4, h5, .h5, h6, .h6 {
 h1, .h1 {
 	font-size: $h1;
 	margin: 0;
-	line-height: 75px;
+	line-height: 45px;
 	font-weight: $extra-bold;
 }
 
@@ -148,17 +147,39 @@ HEADER STYLES
 *********************/
 
 .header {
-	background-color: $white;
+	background-color: $primary-color;
+}
+
+.shs {
+	width: 40px;
+	height: 1.5px;
+	margin-top: -2px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #656464;
+}
+
+.shs-scroll {
+	width: 40px;
+	height: 1.5px;
+	margin-top: -2px;
+	display: inline-block;
+	vertical-align: middle;
+	background-color: #656464;
+}
+
+.shs-scroll-active {
+	color: $red;
 }
 
 #inner-header {
 	width: 100%;
-	padding: 0 50px;
-	text-align: center;
+	padding: 0 20px;
+	text-align: left;
 
 	a {
 		font-size: $small;
-		color: $black;
+		color: $white;
 	}
 
 	ul {
