@@ -13,7 +13,6 @@ body {
 	-webkit-font-smoothing: antialiased;
 	background-color: $white;
 	color: $text-color;
-	font-family: $font;
 	font-size: 100%;
 	line-height: 1.5;
 }
@@ -76,18 +75,38 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
+h1, .h1, h2, .h2, h3, .h3 {
 	text-rendering: optimizelegibility;
-	font-weight: 500;
+	font-weight: $extra-bold;
+	font-family: $font-bold;
+	color: $primary-color;
+	text-transform: $uppercase;
+	letter-spacing: 4px;
+	-webkit-margin-after: 0;
+  -webkit-margin-before: 0;
+	a {
+		text-decoration: none;
+	}
+}
 
+h4, .h4, h5, .h5 {
+	text-rendering: optimizelegibility;
+	font-weight: $extra-bold;
+	font-family: $font-bold;
+	text-transform: $uppercase;
+	letter-spacing: 2px;
+	word-spacing: 2px;
+	-webkit-margin-after: 0;
+  -webkit-margin-before: 0;
 	a {
 		text-decoration: none;
 	}
 }
 
 h1, .h1 {
-	font-size: 2.5em;
-	line-height: 1.333em;
+	font-size: $heading;
+	margin: 0;
+	line-height: 75px;
 }
 
 h2, .h2 {
