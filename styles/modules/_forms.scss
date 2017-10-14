@@ -38,6 +38,7 @@ textarea,
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
+  box-sizing: border-box;
   border: 0;
   width: 100%;
   max-width: 400px;
@@ -99,9 +100,15 @@ input[type="password"] {
 
 // textareas
 textarea {
-  max-width: 100%;
+  padding: 7px 10px;
+  max-width: 400px;
   min-height: 120px;
   line-height: 1.5em;
+}
+
+textarea::placeholder {
+  padding: 5px 5px;
+  margin-top: -2px;
 }
 
 // selects

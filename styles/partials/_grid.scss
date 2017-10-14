@@ -15,8 +15,7 @@ Grid
   font-weight: $bold;
   font-family: $font-serif;
   text-align: right;
-  line-height: 25px;
-  letter-spacing: 1px;
+  line-height: 55px;
   padding: 10px 15px 10px 10px;
   background-color: rgba(255, 255, 255, 0.4);
   a:hover {
@@ -35,6 +34,7 @@ Grid
 
 .form-group {
     margin: 20px 0;
+    display: flex;
 }
 
 footer.cf {

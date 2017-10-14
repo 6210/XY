@@ -90,23 +90,6 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	}
 }
 
-h6, .h6 {
-	font-size: $h6;
-	font-weight: $bold;
-	text-rendering: optimizelegibility;
-	font-weight: $bold;
-	color: $black;
-	font-family: $font-serif;
-	letter-spacing: 2px;
-	word-spacing: 1.5px;
-	-webkit-margin-after: 0;
-	-webkit-margin-before: 0;
-	line-height: 47px;
-	a {
-		text-decoration: none;
-	}
-}
-
 h1, .h1 {
 	font-size: $h1;
 	margin: 0;
@@ -143,6 +126,16 @@ h5, .h5 {
 h6, .h6 {
 	font-size: $h6;
 	font-weight: $bold;
+	text-rendering: optimizelegibility;
+	font-weight: $bold;
+	color: $black;
+	font-family: $font-serif;
+	-webkit-margin-after: 0;
+	-webkit-margin-before: 0;
+	line-height: 47px;
+	a {
+		text-decoration: none;
+	}
 }
 
 /*********************
@@ -163,8 +156,9 @@ HEADER STYLES
 }
 
 .shs-scroll {
-	width: 40px;
-	height: 1.5px;
+	width: 30px;
+	height: 1px;
+	margin: 0 15px;
 	margin-top: -2px;
 	display: inline-block;
 	vertical-align: middle;
@@ -177,7 +171,7 @@ HEADER STYLES
 
 .section-header {
 	font-family: $font-serif;
-	font-size: $h6;
+	font-size: 1em;
 }
 
 .mrgn-btm-l {
@@ -186,6 +180,10 @@ HEADER STYLES
 
 .mrgn-top-l {
 	margin-top: $mrgn-top-l;
+}
+
+.flex {
+	display: flex;
 }
 
 .scroll-section-header {
