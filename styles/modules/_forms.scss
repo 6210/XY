@@ -94,7 +94,7 @@ textarea,
 
 // spacing out the password (thx @murtaugh)
 input[type="password"] {
-  letter-spacing: 0.3em;
+  letter-spacing: 0;
 }
 
 // textareas
@@ -112,5 +112,3 @@ select {
   background-repeat: no-repeat;
   background-position: 97.5% center;
 }
-
-

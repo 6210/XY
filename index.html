@@ -16,7 +16,7 @@
 		<meta name="HandheldFriendly" content="True">
 		<meta name="MobileOptimized" content="320">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+		<!-- <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico"> -->
 
 		<!--[if IE]>
 			<link rel="shortcut icon" href="favicon.ico">
@@ -42,6 +42,51 @@
 
 		<!-- Navigation -->
 		<main-nav></main-nav>
+
+		<!-- Scroll Spy -->
+		<div class="scroll-spy">
+			<!-- First Item -->
+		  <li>
+				<a href="#one" du-smooth-scroll>
+					YX
+	        <span class="shs-scroll shs-scroll-active"></span>
+	        Home
+				</a>
+			</li>
+			<!-- Second Item -->
+			<li>
+				<a href="#one" du-smooth-scroll>
+					H1
+	        <span class="shs-scroll"></span>
+	        About
+				</a>
+			</li>
+			<!-- Third Item -->
+			<li>
+				<a href="#one" du-smooth-scroll>
+					H2
+	        <span class="shs-scroll"></span>
+	        Work
+				</a>
+			</li>
+			<!-- Fourth Item -->
+			<li>
+				<a href="#one" du-smooth-scroll>
+					H3
+	        <span class="shs-scroll"></span>
+	        Links
+				</a>
+			</li>
+			<!-- Fifth Item -->
+			<li>
+				<a href="#one" du-smooth-scroll>
+					H4
+	        <span class="shs-scroll"></span>
+	        Other
+				</a>
+			</li>
+
+		</div>
 
 		<!-- Main view for templates -->
 		<div data-ng-view="" class="container"></div>
@@ -70,6 +115,7 @@
 	<!-- build:angularlibs js/angularlibs.js -->
 	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
 	<script type="text/javascript" src="bower_components/angular-route/angular-route.js"></script>
+	<script type="text/javascript" src="js/angular/angular-scroll.min.js"></script>
 	<script type="text/javascript" src="bower_components/angular-sanitize/angular-sanitize.js"></script>
 	<!-- endbuild -->
 

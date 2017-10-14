@@ -1,40 +1,63 @@
-<h1 class="text-center">H1 Style Guide</h1>
-<h4 class="text-center">H6 Elements Style Layout</h4>
-
-<hr>
-
-<scroll-spy>
-  <li><a href="#one">Item One</a></li>
-  <li><a href="#two">Item Two</a></li>
-  <li><a href="#three">Item Three</a></li>
-  <li><a href="#four">Item Four</a></li>
-  <li><a href="#five">Item Five</a></li>
-</scroll-spy>
-
 <div class="container cf">
 
-    <h1>H1 Heading One</h1>
-    <h2>H2 Heading Two</h2>
-    <h3>H3 Heading Three</h3>
-    <h4>H4 Heading Four</h4>
-    <h5>H5 Heading Five</h5>
-    <h6>H6 Heading Six</h6>
+    <div class="content-wrapper">
+      <h1>Style Guide</h1>
+      <div class="font-slogan">
+        Elements and Container Styles
+      </div>
+    </div>
 
-    <div>
-      <h3 id="">Paragraph</h3>
-      <p>
+    <div class="content-wrapper">
+      <h2>H2 Heading Two</h2>
+      <h3>H3 Heading Three</h3>
+      <h4>H4 Heading Four</h4>
+      <h5>H5 Heading Five</h5>
+    </div>
+
+    <!-- Section Title -->
+    <div class="content-wrapper">
+      <h6 class="section-header">
+        H6
+        <!-- Section Heading Seperator -->
+        <span class="shs"></span>
+        Heading Six
+      </h6>
+    </div>
+
+    <!-- Slogan -->
+    <div class="content-wrapper">
+      <h3 id="one">Slogan</h3>
+      <div class="font-slogan">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur arcu erat, accumsan
         id imperdiet et, porttitor at sem. Curabitur arcu erat, accumsan id imperdiet et, porttitor
-        at sem. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Curabitur arcu
-        erat, accumsan id imperdiet et, porttitor at sem. Vivamus suscipit tortor eget felis porttitor
-        volutpat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Praesent sapien
-        massa, convallis a pellentesque nec, egestas non nisi. Curabitur non nulla sit amet nisl tempus
-        convallis quis ac lectus. Cras ultricies ligula sed magna dictum porta.
+        at sem.
+      </div>
+    </div>
+
+    <div class="content-wrapper">
+      <h6 class="scroll-section-header">
+        Some other <br>
+        text.
+      </h6>
+    </div>
+
+    <!-- Paragraph -->
+    <div class="content-wrapper">
+      <h4 id="one">Paragraph</h4>
+      <p>
+        Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Lorem ipsum dolor
+        sit amet, consectetur adipiscing elit. Praesent sapien massa, convallis a pellentesque
+        nec, egestas non nisi. Pellentesque in ipsum id orci porta dapibus. Mauris blandit
+        aliquet elit, eget tincidunt nibh pulvinar a. Donec rutrum congue leo eget malesuada.
+        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Cras ultricies ligula
+        sed magna dictum porta. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
+        Donec rutrum congue leo eget malesuada.
       </p>
     </div>
 
-    <div>
-        <h3>Unordered List</h3>
+    <!-- Unordered List -->
+    <div class="content-wrapper">
+        <h5>Unordered List</h5>
         <ul>
             <li>List Item One</li>
             <li>List Item Two</li>
@@ -44,8 +67,9 @@
         </ul>
     </div>
 
-    <div>
-        <h3>Ordered List</h3>
+    <!-- Ordered List -->
+    <div class="content-wrapper">
+        <h5>Ordered List</h5>
         <ol>
             <li>List Item One</li>
             <li>List Item Two</li>
@@ -55,10 +79,9 @@
         </ol>
     </div>
 
-    <div>
+    <!-- Form -->
+    <div class="content-wrapper">
       <h3>Form Elements</h3>
-
-      <!-- Form -->
       <form id="formId" name="formName">
 
         <!-- File Upload -->
@@ -66,8 +89,7 @@
             <label for="searchInput">Search Field</label>
             <input type="search"
                    name="searchInput"
-                   id="searchInput"
-                   autofocus/>
+                   id="searchInput"/>
         </div>
 
         <!-- File Upload -->
@@ -176,7 +198,7 @@
 
         <!-- Textarea -->
         <div class="form-group">
-          <textarea rows="4"cols="50"form="formId">Text Area</textarea>
+          <textarea rows="4" cols="50" form="formId" placeholder="Leave A Reply"></textarea>
         </div>
 
         <!-- Select Box -->
