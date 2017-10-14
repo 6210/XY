@@ -24,15 +24,18 @@ $font-serif: 'Adamina', serif;
      sizes
    =============================== */
 
-$h1: 49px;
-$h2: 39px;
-$h3: 31px;
-$h4: 25px;
-$h5: 16px;
+$h1: 52px;
+$h2: 40px;
+$h3: 33px;
+$h4: 27px;
+$h5: 20px;
 $h6: 11px;
-$large: 31px;
+$large: 28px;
 $medium: 20px;
 $small: 14px;
+
+$mrgn-btm-l: 45px;
+$mrgn-top-l: 45px;
 
 /* ===============================
      weights
@@ -61,8 +64,8 @@ p {
   -webkit-hyphenate-before: 2;
    -webkit-hyphenate-after: 3;
            hyphenate-lines: 3;
-      -webkit-margin-after: 0;
      -webkit-margin-before: 0;
+      -webkit-margin-after: 10px;
   // enabling fancy ligatures when available
   -webkit-font-feature-settings: "liga", "dlig";
    -moz-font-feature-settings: "liga=1, dlig=1";
