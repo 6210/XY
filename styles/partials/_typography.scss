@@ -5,7 +5,7 @@ Typography
 ******************************************************************/
 
 // Web fonts
-@import url('https://fonts.googleapis.com/css?family=Montserrat: 300,400,600,700,800'); // Montserrat
+@import url('https://fonts.googleapis.com/css?family=Montserrat: 300,400,600,700'); // Montserrat
 @import url('https://fonts.googleapis.com/css?family=Adamina'); // Adamina
 
 /* ===============================
@@ -24,11 +24,11 @@ $font-serif: 'Adamina', serif;
      sizes
    =============================== */
 
-$h1: 58px;
-$h2: 47px;
-$h3: 33px;
-$h4: 29px;
-$h5: 15px;
+$h1: 49px;
+$h2: 39px;
+$h3: 31px;
+$h4: 25px;
+$h5: 16px;
 $h6: 11px;
 $large: 31px;
 $medium: 20px;
@@ -41,18 +41,15 @@ $thin: 300;
 $normal: 400;
 $semi-bold: 600;
 $bold: 700;
-$extra-bold: 800;
-
-
 
 /*
 some nice typographical defaults
 more here: http://www.newnet-soft.com/blog/csstypography
 */
 p {
-  line-height: 40px;
+  line-height: 27px;
+  font-family: $font-slogan;
   font-weight: normal;
-  font-size: $large;
   -ms-word-wrap: break-word;
   word-break: break-word; //non-standart css for webkit
   word-wrap: break-word;

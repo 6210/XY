@@ -75,7 +75,7 @@ a, a:visited {
 H1, H2, H3, H4, H5 STYLES
 ******************************************************************/
 
-h1, .h1, h2, .h2, h3, .h3 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	text-rendering: optimizelegibility;
 	font-family: $font-heading;
 	color: $primary-color;
@@ -89,7 +89,9 @@ h1, .h1, h2, .h2, h3, .h3 {
 	}
 }
 
-h4, .h4, h5, .h5, h6, .h6 {
+h6, .h6 {
+	font-size: $h6;
+	font-weight: $bold;
 	text-rendering: optimizelegibility;
 	font-weight: $bold;
 	color: $black;
@@ -97,7 +99,8 @@ h4, .h4, h5, .h5, h6, .h6 {
 	letter-spacing: 2px;
 	word-spacing: 1.5px;
 	-webkit-margin-after: 0;
-  -webkit-margin-before: 0;
+	-webkit-margin-before: 0;
+	line-height: 47px;
 	a {
 		text-decoration: none;
 	}
@@ -107,13 +110,7 @@ h1, .h1 {
 	font-size: $h1;
 	margin: 0;
 	line-height: 45px;
-	font-weight: $extra-bold;
-}
-
-.font-slogan {
-	font-family: $font-slogan;
-	font-size: $large;
-	text-transform: lowercase;
+	font-weight: $bold;
 }
 
 h2, .h2 {
@@ -170,6 +167,24 @@ HEADER STYLES
 
 .shs-scroll-active {
 	color: $red;
+}
+
+.section-header {
+	font-family: $font-serif;
+	font-size: $h6;
+}
+
+.scroll-section-header {
+	font-size: $h5;
+	line-height: 21px;
+	font-family: $font-serif;
+}
+
+.font-slogan {
+	font-family: $font-slogan;
+	font-size: $large;
+	text-transform: lowercase;
+	margin-left: 2px;
 }
 
 #inner-header {
