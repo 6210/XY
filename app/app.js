@@ -24,7 +24,26 @@
   // safe dependency injection
   // this prevents minification issues
   config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider', '$compileProvider'];
-  // config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider', '$compileProvider','$duScroll'];
+
+  var ScrollSpy = function($scope, greeter) {
+    // ...
+  }
+  ScrollSpy.$inject = ['$scope', 'duScroll'];
+  // ScrollSpy.controller('scrollSpy', scrollSpy);
+
+  angular.module('ScrollSpy', ['duScroll'])
+    .value('duScrollDuration', 2000)
+    .value('duScrollOffset', 30)
+    .controller('myCtrl', function($scope, $document) {
+      $document.scrollTopAnimated(400).then(function() {
+        console && console.log('You just scrolled to the top!');
+      });
+
+      var someElement = angular.element(document.getElementById('one'));
+      $document.scrollToElementAnimated(someElement);
+    }
+  );
+
 
   /**
    * App routing
@@ -40,28 +59,36 @@
     // routes
     $routeProvider
       .when('/', {
-        templateUrl: 'views/home.html',
+        templateUrl: 'views/scroll-test.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/style-guide', {
-        templateUrl: 'views/style-guide.html',
+        templateUrl: 'views/scroll-test.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/contact', {
-        templateUrl: 'views/contact.html',
+        templateUrl: 'views/scroll-test.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/work', {
-        templateUrl: 'views/work.html',
+        templateUrl: 'views/scroll-test.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
-      .otherwise({
+
+      .when('/scroll-test', {
+        templateUrl: 'views/scroll-test.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+
+      .otherwise  ({
         redirectTo: '/'
-      });
+      })
+
 
     $httpProvider.interceptors.push('authInterceptor');
 
@@ -109,12 +136,11 @@
     .module('boilerplate')
     .run(run);
 
+
   run.$inject = ['$rootScope', '$location'];
 
   function run($rootScope, $location) {
-
     // put here everything that you need to run on page load
-
   }
 
 

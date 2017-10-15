@@ -1,8 +1,6 @@
 ;(function() {
 
-
     'use strict';
-
 
     /**
      * Service for complex localStorage functionality
@@ -44,7 +42,7 @@
         /*
         * whenever localStorage gets updated trigger
         * $digest cicle so all values are refreshed in the view
-         */
+        */
         angular.element($window).on('storage', function(event, name) {
           if (event.key === name) {
             $rootScope.$apply();
