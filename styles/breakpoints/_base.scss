@@ -26,11 +26,13 @@ html {
   box-sizing: inherit;
 }
 
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-}
+// list-style-type: none;
+// margin: 0;
+// padding: 0;
+// font-weight: 400;
+//
+// letter-spacing: 0.5px;
+// word-spacing: 2px;
 
 /*********************
 LAYOUT & GRID STYLES
@@ -80,13 +82,45 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5 {
 	font-family: $font-heading;
 	color: $primary-color;
 	text-transform: $uppercase;
-	letter-spacing: 3px;
 	word-spacing: 4px;
 	-webkit-margin-after: 0;
   -webkit-margin-before: 0;
 	a {
 		text-decoration: none;
 	}
+}
+
+h1, .h1 {
+	font-size: $h1;
+	margin: 0;
+	letter-spacing: 3px;
+	line-height: 55px;
+	font-weight: $bold;
+}
+
+h2, .h2 {
+	font-size: $h2;
+	letter-spacing: 3px;
+	line-height: 1.4em;
+	font-weight: $bold;
+}
+
+h3, .h3 {
+	font-size: $h3;
+	font-weight: $bold;
+	letter-spacing: 3px;
+}
+
+h4, .h4 {
+	font-size: $h4;
+	font-weight: $bold;
+	letter-spacing: 2px;
+}
+
+h5, .h5 {
+	font-size: $h5;
+	font-weight: $bold;
+	letter-spacing: 1.5px;
 }
 
 h6, .h6 {
@@ -96,47 +130,12 @@ h6, .h6 {
 	font-weight: $bold;
 	color: $black;
 	font-family: $font-serif;
-	letter-spacing: 2px;
-	word-spacing: 1.5px;
 	-webkit-margin-after: 0;
 	-webkit-margin-before: 0;
 	line-height: 47px;
 	a {
 		text-decoration: none;
 	}
-}
-
-h1, .h1 {
-	font-size: $h1;
-	margin: 0;
-	line-height: 45px;
-	font-weight: $bold;
-}
-
-h2, .h2 {
-	font-size: $h2;
-	line-height: 1.4em;
-	font-weight: $bold;
-}
-
-h3, .h3 {
-	font-size: $h3;
-	font-weight: $bold;
-}
-
-h4, .h4 {
-	font-size: $h4;
-	font-weight: $bold;
-}
-
-h5, .h5 {
-	font-size: $h5;
-	font-weight: $bold;
-}
-
-h6, .h6 {
-	font-size: $h6;
-	font-weight: $bold;
 }
 
 /*********************
@@ -157,8 +156,9 @@ HEADER STYLES
 }
 
 .shs-scroll {
-	width: 40px;
-	height: 1.5px;
+	width: 30px;
+	height: 1px;
+	margin: 0 15px;
 	margin-top: -2px;
 	display: inline-block;
 	vertical-align: middle;
@@ -171,7 +171,19 @@ HEADER STYLES
 
 .section-header {
 	font-family: $font-serif;
-	font-size: $h6;
+	font-size: 1em;
+}
+
+.mrgn-btm-l {
+	margin-bottom: $mrgn-btm-l;
+}
+
+.mrgn-top-l {
+	margin-top: $mrgn-top-l;
+}
+
+.flex {
+	display: flex;
 }
 
 .scroll-section-header {
@@ -183,8 +195,8 @@ HEADER STYLES
 .font-slogan {
 	font-family: $font-slogan;
 	font-size: $large;
-	text-transform: lowercase;
 	margin-left: 2px;
+	line-height: 38px;
 }
 
 #inner-header {
@@ -243,6 +255,9 @@ NAVIGATION STYLES
 	}
 }
 
+footer {
+    padding: 50px 30px 8px 30px;
+}
 
 /*********************
 RESPONSIVE NAV
@@ -285,6 +300,10 @@ MAIN PAGE
 	margin-top: 1.5em;
 }
 
+.block-center {
+	margin: $block-center;
+}
+
 // slider
 .slider {
 	margin-bottom: 30px;
@@ -298,7 +317,15 @@ MAIN PAGE
 	}
 }
 
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	line-height: $list-height;
+}
+
 ol {
+	line-height: $list-height;
 	-webkit-padding-start: 20px;
 	-webkit-margin-before: 0;
 	-webkit-margin-after: 0;

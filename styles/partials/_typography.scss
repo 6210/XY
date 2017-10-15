@@ -6,6 +6,7 @@ Typography
 
 // Web fonts
 @import url('https://fonts.googleapis.com/css?family=Montserrat: 300,400,600,700'); // Montserrat
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:700');
 @import url('https://fonts.googleapis.com/css?family=Adamina'); // Adamina
 
 /* ===============================
@@ -18,21 +19,25 @@ $font-semibold: 'Montserrat', sans-serif;
 $font-extrabold: 'Montserrat', sans-serif;
 $font-extralightitalic: Helvetica, Arial, sans-serif;
 $font-slogan: Helvetica, Arial, sans-serif;
-$font-serif: 'Adamina', serif;
+$font-serif: 'Crimson Text', serif;
+
 
 /* ===============================
      sizes
    =============================== */
 
-$h1: 49px;
-$h2: 39px;
-$h3: 31px;
-$h4: 25px;
-$h5: 16px;
-$h6: 11px;
-$large: 31px;
+$h1: 52px;
+$h2: 40px;
+$h3: 2.5em;
+$h4: 27px;
+$h5: 20px;
+$h6: 12px;
+$large: 28px;
 $medium: 20px;
 $small: 14px;
+
+$mrgn-btm-l: 45px;
+$mrgn-top-l: 45px;
 
 /* ===============================
      weights
@@ -61,8 +66,8 @@ p {
   -webkit-hyphenate-before: 2;
    -webkit-hyphenate-after: 3;
            hyphenate-lines: 3;
-      -webkit-margin-after: 0;
      -webkit-margin-before: 0;
+      -webkit-margin-after: 10px;
   // enabling fancy ligatures when available
   -webkit-font-feature-settings: "liga", "dlig";
    -moz-font-feature-settings: "liga=1, dlig=1";

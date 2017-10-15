@@ -29,18 +29,18 @@ select,
 textarea,
 .field {
   display: block;
+  flex: 1;
   height: 40px;
   line-height: 40px;
   padding: 0 12px;
-  margin-bottom: 14px;
   font-size: 1em;
   color: $text-color;
   border-radius: 3px;
   vertical-align: middle;
   box-shadow: none;
+  box-sizing: border-box;
   border: 0;
   width: 100%;
-  max-width: 400px;
   font-family: $font;
   background-color: $gray;
   @include transition(background-color 0.24s ease-in-out);
@@ -92,6 +92,25 @@ textarea,
 
 } // end input defaults
 
+// Form Wrapper
+.form-group {
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px dashed rgba(44, 187, 175, 0.07);
+  padding-bottom: 20px;
+}
+
+// Radio/Checkbox Wrapper
+.inpt-box-wrpr {
+  display: block;
+}
+
+// Label Styles
+label {
+    min-width: 140px;
+}
+
 // spacing out the password (thx @murtaugh)
 input[type="password"] {
   letter-spacing: 0;
@@ -99,9 +118,14 @@ input[type="password"] {
 
 // textareas
 textarea {
-  max-width: 100%;
+  padding: 7px 10px;
   min-height: 120px;
   line-height: 1.5em;
+}
+
+textarea::placeholder {
+  padding: 5px 5px;
+  margin-top: -2px;
 }
 
 // selects
