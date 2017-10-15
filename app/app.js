@@ -24,6 +24,7 @@
   // safe dependency injection
   // this prevents minification issues
   config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider', '$compileProvider'];
+  // config.$inject = ['$routeProvider', '$locationProvider', '$httpProvider', '$compileProvider','$duScroll'];
 
   /**
    * App routing

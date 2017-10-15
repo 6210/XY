@@ -32,23 +32,24 @@ textarea,
   flex: 1;
   height: 40px;
   line-height: 40px;
-  padding: 0 12px;
-  font-size: 1em;
+  padding: 25px 5px 20px 0;
+  font-size: 1.25em;
   color: $text-color;
-  border-radius: 3px;
+  border-radius: 0;
   vertical-align: middle;
   box-shadow: none;
   box-sizing: border-box;
   border: 0;
+  border-bottom: 2px solid $gray;
   width: 100%;
   font-family: $font;
-  background-color: $gray;
-  @include transition(background-color 0.24s ease-in-out);
+  background-color: $white;
+  @include transition(border-bottom 0.24s ease-in-out);
 
   // a focused input (or hovered on)
   &:focus,
   &:active {
-    background-color: lighten($gray, 4%);
+    border-bottom: 2px solid $primary-color;
     outline: none;
   } // end hover or focus
 
@@ -97,7 +98,6 @@ textarea,
   margin: 20px 0;
   display: flex;
   align-items: center;
-  border-bottom: 1px dashed rgba(44, 187, 175, 0.07);
   padding-bottom: 20px;
 }
 
@@ -109,6 +109,7 @@ textarea,
 // Label Styles
 label {
     min-width: 140px;
+    color: $medium-gray;
 }
 
 // spacing out the password (thx @murtaugh)
@@ -121,6 +122,13 @@ textarea {
   padding: 7px 10px;
   min-height: 120px;
   line-height: 1.5em;
+  border: 2px solid $light-gray;
+  // a focused input (or hovered on)
+  &:focus,
+  &:active {
+    border: 2px solid $primary-color;
+    outline: none;
+  } // end hover or focus
 }
 
 textarea::placeholder {
