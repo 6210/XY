@@ -31,19 +31,6 @@
   ScrollSpy.$inject = ['$scope', 'duScroll'];
   // ScrollSpy.controller('scrollSpy', scrollSpy);
 
-  angular.module('ScrollSpy', ['duScroll'])
-    .value('duScrollDuration', 2000)
-    .value('duScrollOffset', 30)
-    .controller('myCtrl', function($scope, $document) {
-      $document.scrollTopAnimated(400).then(function() {
-        console && console.log('You just scrolled to the top!');
-      });
-
-      var someElement = angular.element(document.getElementById('one'));
-      $document.scrollToElementAnimated(someElement);
-    }
-  );
-
 
   /**
    * App routing
@@ -54,27 +41,29 @@
    */
   function config($routeProvider, $locationProvider, $httpProvider, $compileProvider) {
 
-    $locationProvider.html5Mode(false);
+    $locationProvider
+      .html5Mode(false);
+      // .hashPrefix('!');
 
     // routes
     $routeProvider
       .when('/', {
-        templateUrl: 'views/scroll-test.html',
+        templateUrl: 'views/home.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/style-guide', {
-        templateUrl: 'views/scroll-test.html',
+        templateUrl: '/style-guide.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/contact', {
-        templateUrl: 'views/scroll-test.html',
+        templateUrl: 'views/contact.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/work', {
-        templateUrl: 'views/scroll-test.html',
+        templateUrl: '/views/work.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
