@@ -19,24 +19,6 @@
     // 'controller as' syntax
     var self = this;
 
-
-    ////////////  function definitions
-
-    console.log('01 - Define ScrollSpy');
-    angular.module('boilerplate', ['duScroll']).
-      controller('MainController', function($scope, $document){
-        $scope.toTheTop = function() {
-          $document.scrollTopAnimated(0, 5000).then(function() {
-            console && console.log('You just scrolled to the top!');
-          });
-        }
-        console.log('Can I get here?');
-        var section3 = angular.element(document.getElementById('section-3'));
-        $scope.toSection3 = function() {
-          $document.scrollToElementAnimated(section3);
-        }
-      }
-    ).value('duScrollOffset', 30);
     /**
      * Load some data
      * @return {Object} Returned object

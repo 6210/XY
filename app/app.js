@@ -28,7 +28,8 @@
   var ScrollSpy = function($scope, greeter) {
     // ...
   }
-  ScrollSpy.$inject = ['$scope', 'duScroll'];
+  ScrollSpy.$inject = ['$scope'];
+  // ScrollSpy.$inject = ['$scope', 'duScroll'];
   // ScrollSpy.controller('scrollSpy', scrollSpy);
 
 
@@ -48,12 +49,17 @@
     // routes
     $routeProvider
       .when('/', {
+        templateUrl: 'views/style-guide.html',
+        controller: 'MainController',
+        controllerAs: 'main'
+      })
+      .when('/home', {
         templateUrl: 'views/home.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
       .when('/style-guide', {
-        templateUrl: '/style-guide.html',
+        templateUrl: 'views/style-guide.html',
         controller: 'MainController',
         controllerAs: 'main'
       })
@@ -117,13 +123,14 @@
     };
   }
 
-
   /**
    * Run block
    */
   angular
     .module('boilerplate')
-    .run(run);
+    .run(run)
+    // .module(core)
+    // .factory(factory);
 
 
   run.$inject = ['$rootScope', '$location'];
